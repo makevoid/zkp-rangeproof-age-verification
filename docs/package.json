@@ -1,0 +1,28 @@
+{
+  "name": "zkp-docs",
+  "version": "1.0.0",
+  "description": "ING Bank Zero Knowledge Proof documentation",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ing-bank/zkproofs.git"
+  },
+  "keywords": [
+    "zkp",
+    "ethereum"
+  ],
+  "author": "blockchain@ing.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ing-bank/zkproofs/issues"
+  },
+  "homepage": "https://github.com/ing-bank/zkproofs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^0.14.8"
+  }
+}
