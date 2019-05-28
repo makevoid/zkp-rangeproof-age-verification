@@ -12,8 +12,6 @@ public class ZKRPSample {
     }
 
     public static void main(String[] args) {
-        print("Start");
-
         BigInteger committmentValue = new BigInteger("19"); // user's age, known only by the user and govt.
         ClosedRange ageRange = Config.getAgeRange();
 
@@ -46,8 +44,6 @@ public class ZKRPSample {
         } else {
             print("Error! The input age is probably outside the range (ageRange doesn't include the commitment value");
         }
-
-        print("Done");
     }
 
     public static String print(String msg) {
