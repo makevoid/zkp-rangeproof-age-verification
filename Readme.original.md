@@ -1,17 +1,19 @@
+Original Readme:
+
 [![CircleCI](https://circleci.com/gh/ing-bank/zkproofs/tree/master.svg?style=shield)](https://circleci.com/gh/ing-bank/zkproofs/tree/master)
 
 # Zero Knowledge Proofs
 
 This repository contains ING's **Zero Knowledge Range Proof (ZKRP)** and **Zero Knowledge Set Membership (ZKSM)**. The current implementations are based on the following papers:
-* Range Proofs based on the paper: [Efficient Proofs that a Committed Number Lies in an Interval](https://www.iacr.org/archive/eurocrypt2000/1807/18070437-new.pdf) by **Fabrice Boudot**. 
-* Set Membership Proofs based on the paper: [Efficient protocols for set membership and range proofs](https://infoscience.epfl.ch/record/128718/files/CCS08.pdf), by **Jan Camenisch, Rafik Chaabouni and Abhi Shelat**. 
+* Range Proofs based on the paper: [Efficient Proofs that a Committed Number Lies in an Interval](https://www.iacr.org/archive/eurocrypt2000/1807/18070437-new.pdf) by **Fabrice Boudot**.
+* Set Membership Proofs based on the paper: [Efficient protocols for set membership and range proofs](https://infoscience.epfl.ch/record/128718/files/CCS08.pdf), by **Jan Camenisch, Rafik Chaabouni and Abhi Shelat**.
 * Bulletproofs based on paper: [Bulletproofs: Short Proofs for Confidential Transactions and More](https://eprint.iacr.org/2017/1066.pdf), by **Benedikt Bünz, Jonathan Bootle, Dan Boneh, Andrew Poelstra, Pieter Wuille and Greg Maxwell**.
 
 ## Getting Started
 
 ### Highlights :rocket:
 
-* Significantly more efficient than generic Zero Knowledge Proofs, like is the case of zkSNARKS. 
+* Significantly more efficient than generic Zero Knowledge Proofs, like is the case of zkSNARKS.
 * Currently used to provide private transactions on Monero, zkLedger, Confidential Transactions and many others.
 
 ### Zero Knowledge Range Proofs
@@ -32,27 +34,19 @@ The Zero Knowledge Range Proof requires a commitment on a number by a trusted pa
 
 ZKSM allows to prove that some secret value is an element of a determined set, without disclosing which value. We can do the following examples using it:
 
-* Prove that we live in a country that belongs to the European Union. 
-* Validation of KYC private data. For example, proving that a postcode is valid, without revealing it. 
+* Prove that we live in a country that belongs to the European Union.
+* Validation of KYC private data. For example, proving that a postcode is valid, without revealing it.
 * Private Identity Management Systems.
 * Other interesting applications like: Anti-Money Laundering (AML) and Common Reference Standard (CRS).
 
 
 ### Bulletproofs
 
-In 2017 researchers proposed the scheme called Bulletproofs to provide a more efficient solution for Zero Knowledge Range Proofs (ZKRP). It was specifically designed for Blockchain, where it is important to have short proofs. For instance, Bulletproofs allows to construct proofs whose size is only logarithmic with respect to the input size. Also, Bulletproofs doesn't require a trusted setup, solving an important problem in order to use this technology to solve practical problems. Previous solutions do require a trusted setup, what means that if the setup is not carried out in an appropriate way, then it would be possible to generate fake ZK proofs. 
+In 2017 researchers proposed the scheme called Bulletproofs to provide a more efficient solution for Zero Knowledge Range Proofs (ZKRP). It was specifically designed for Blockchain, where it is important to have short proofs. For instance, Bulletproofs allows to construct proofs whose size is only logarithmic with respect to the input size. Also, Bulletproofs doesn't require a trusted setup, solving an important problem in order to use this technology to solve practical problems. Previous solutions do require a trusted setup, what means that if the setup is not carried out in an appropriate way, then it would be possible to generate fake ZK proofs.
 
-Bulletproofs can be used to solve the abovementioned problems and even more, because it is possible to use it for any computable function which requires privacy for its input data. Therefore, Bulletproofs is similiar to zk-SNARKs and zk-STARKs. However, this functionalities were not yet implemented and should be considered as future work. In particular, Bulletproofs seems an interesting building block to construct private smart contracts. 
+Bulletproofs can be used to solve the abovementioned problems and even more, because it is possible to use it for any computable function which requires privacy for its input data. Therefore, Bulletproofs is similiar to zk-SNARKs and zk-STARKs. However, this functionalities were not yet implemented and should be considered as future work. In particular, Bulletproofs seems an interesting building block to construct private smart contracts.
 
 
 ## Contribute :wave:
 
 We would love your contributions. Please feel free to submit any PR.
-
-## License
-
-This repository is GNU Lesser General Public License v3.0 licensed, as found in the [LICENSE file](https://github.com/ing-bank/zkproofs/blob/master/LICENSE.txt).
-
-
-
-
