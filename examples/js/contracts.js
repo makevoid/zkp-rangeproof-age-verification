@@ -1,6 +1,6 @@
 module.exports = {
   'RangeProofValidator': {
-    'address': '0xfFb383e52D4006690a5215a4a978220863147aD2',
+    'address': '0x2Bd63177f61D0Dc67534d48406c1849005dfE04B',
     'abi': [
       {
         'constant': true,

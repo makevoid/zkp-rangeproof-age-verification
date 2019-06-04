@@ -1,8 +1,10 @@
 const { exec } = require('child_process')
 const Web3 = require('web3')
-const provider = 'http://localhost:8545'
-const web3 = new Web3(provider)
 const contracts = require('./contracts')
+
+const web3 = new Web3(provider)
+const provider = 'http://localhost:8545'
+
 const { RangeProofValidator } = contracts
 const { abi, address, bytecode } = RangeProofValidator
 
@@ -34,7 +36,6 @@ function execAsync(cmd, options = { delimiter: '|' }) {
   console.log('COMMITMENT: \n', commitment)
   console.log('PROOF: \n', proof)
 
-  // console.log('CONTRACT', contract, contract.methods.validate)
   const validated = await contract.methods.validate(lowerBound, upperBound, commitment, proof).call();
   console.log('VALIDATED: ', validated)
 })()
