@@ -36,8 +36,6 @@ public class ZKRPSample {
                 print("ERROR - Validation of Age-Knowledge-Proof FAILED!");
             }
 
-            // That's it! The end!
-
             // EXTRA:
             // code to export commitment to Ethereum so a smart contract can verify the range proof
             byte[] solidity = Eth.exportSolidity(secretGroup, committmentValue);
