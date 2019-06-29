@@ -6,6 +6,11 @@ This is a fork of https://github.com/ing-bank/zkproofs that just contains a litt
 
 Please see the up to date project and the original readme on the main repository origin. 
 
+### TODO:
+
+- document setting up and running the project with intellij
+- make a video of the demo
+
 ## License
 
 This repository is GNU Lesser General Public License v3.0 licensed, as found in the [LICENSE file](https://github.com/ing-bank/zkproofs/blob/master/LICENSE.txt).
